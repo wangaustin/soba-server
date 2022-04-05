@@ -1,8 +1,3 @@
-require('dotenv').config();
-// const SECRET = process.env.SECRET;
-
-console.log(process.env.MONGODB_URI);
-
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
