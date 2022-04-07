@@ -1,8 +1,3 @@
-require('dotenv').config();
-// const SECRET = process.env.SECRET;
-
-console.log(process.env.MONGODB_URI);
-
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -21,12 +16,6 @@ app.use(cors());
 mongoose.connect("mongodb+srv://USERNAME:PASSWORD@soba-cluster.bngzh.mongodb.net/school?retryWrites=true&w=majority", {
     useNewUrlParser: true,
 })
-
-// mongoose.connect(SECRET, {
-//     useNewUrlParser: true,
-// })
-
-
 
 /****** DORM ******/
 // localhost:3001/dorm/new
